@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DodajDruzyne));
             this.alreadyAddedLabel = new System.Windows.Forms.Label();
             this.TeamNameTakenLabel = new System.Windows.Forms.Label();
             this.warningUpLabel = new System.Windows.Forms.Label();
@@ -67,11 +68,11 @@
             // 
             this.alreadyAddedLabel.AutoSize = true;
             this.alreadyAddedLabel.BackColor = System.Drawing.Color.Transparent;
-            this.alreadyAddedLabel.Font = new System.Drawing.Font("Myriad Pro", 9F, System.Drawing.FontStyle.Bold);
+            this.alreadyAddedLabel.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold);
             this.alreadyAddedLabel.ForeColor = System.Drawing.Color.Tomato;
             this.alreadyAddedLabel.Location = new System.Drawing.Point(12, 521);
             this.alreadyAddedLabel.Name = "alreadyAddedLabel";
-            this.alreadyAddedLabel.Size = new System.Drawing.Size(202, 17);
+            this.alreadyAddedLabel.Size = new System.Drawing.Size(183, 18);
             this.alreadyAddedLabel.TabIndex = 66;
             this.alreadyAddedLabel.Text = "Już dodałeś tego zawodnika.";
             this.alreadyAddedLabel.Visible = false;
@@ -80,11 +81,11 @@
             // 
             this.TeamNameTakenLabel.AutoSize = true;
             this.TeamNameTakenLabel.BackColor = System.Drawing.Color.Transparent;
-            this.TeamNameTakenLabel.Font = new System.Drawing.Font("Myriad Pro", 9F, System.Drawing.FontStyle.Bold);
+            this.TeamNameTakenLabel.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold);
             this.TeamNameTakenLabel.ForeColor = System.Drawing.Color.Tomato;
-            this.TeamNameTakenLabel.Location = new System.Drawing.Point(409, 19);
+            this.TeamNameTakenLabel.Location = new System.Drawing.Point(423, 18);
             this.TeamNameTakenLabel.Name = "TeamNameTakenLabel";
-            this.TeamNameTakenLabel.Size = new System.Drawing.Size(96, 17);
+            this.TeamNameTakenLabel.Size = new System.Drawing.Size(89, 18);
             this.TeamNameTakenLabel.TabIndex = 65;
             this.TeamNameTakenLabel.Text = "Nazwa zajęta";
             this.TeamNameTakenLabel.Visible = false;
@@ -93,11 +94,11 @@
             // 
             this.warningUpLabel.AutoSize = true;
             this.warningUpLabel.BackColor = System.Drawing.Color.Transparent;
-            this.warningUpLabel.Font = new System.Drawing.Font("Myriad Pro", 9F, System.Drawing.FontStyle.Bold);
+            this.warningUpLabel.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold);
             this.warningUpLabel.ForeColor = System.Drawing.Color.Tomato;
             this.warningUpLabel.Location = new System.Drawing.Point(12, 555);
             this.warningUpLabel.Name = "warningUpLabel";
-            this.warningUpLabel.Size = new System.Drawing.Size(267, 17);
+            this.warningUpLabel.Size = new System.Drawing.Size(247, 18);
             this.warningUpLabel.TabIndex = 64;
             this.warningUpLabel.Text = "Nie możesz dodać więcej zawodników.";
             this.warningUpLabel.Visible = false;
@@ -106,11 +107,11 @@
             // 
             this.warningDownLabel.AutoSize = true;
             this.warningDownLabel.BackColor = System.Drawing.Color.Transparent;
-            this.warningDownLabel.Font = new System.Drawing.Font("Myriad Pro", 9F, System.Drawing.FontStyle.Bold);
+            this.warningDownLabel.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold);
             this.warningDownLabel.ForeColor = System.Drawing.Color.Tomato;
             this.warningDownLabel.Location = new System.Drawing.Point(12, 538);
             this.warningDownLabel.Name = "warningDownLabel";
-            this.warningDownLabel.Size = new System.Drawing.Size(243, 17);
+            this.warningDownLabel.Size = new System.Drawing.Size(225, 18);
             this.warningDownLabel.TabIndex = 63;
             this.warningDownLabel.Text = "Masz mniej niż trzech zawodników.";
             this.warningDownLabel.Visible = false;
@@ -130,11 +131,11 @@
             // 
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("Myriad Pro", 9F, System.Drawing.FontStyle.Bold);
+            this.label19.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold);
             this.label19.Location = new System.Drawing.Point(5, 78);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(89, 17);
+            this.label19.Size = new System.Drawing.Size(84, 18);
             this.label19.TabIndex = 59;
             this.label19.Text = "Członkowie:";
             // 
@@ -142,18 +143,18 @@
             // 
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Myriad Pro", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(5, 17);
+            this.label18.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label18.Location = new System.Drawing.Point(12, 18);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(109, 17);
+            this.label18.Size = new System.Drawing.Size(101, 18);
             this.label18.TabIndex = 58;
             this.label18.Text = "Nazwa drużyny";
             // 
             // teamNameTextBox
             // 
             this.teamNameTextBox.Font = new System.Drawing.Font("Calibri", 9F);
-            this.teamNameTextBox.Location = new System.Drawing.Point(121, 14);
+            this.teamNameTextBox.Location = new System.Drawing.Point(135, 13);
             this.teamNameTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.teamNameTextBox.Name = "teamNameTextBox";
             this.teamNameTextBox.Size = new System.Drawing.Size(282, 26);
@@ -349,7 +350,7 @@
             // 
             // registerTeam
             // 
-            this.registerTeam.Font = new System.Drawing.Font("Myriad Pro", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.registerTeam.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.registerTeam.Location = new System.Drawing.Point(317, 580);
             this.registerTeam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.registerTeam.Name = "registerTeam";
@@ -361,7 +362,7 @@
             // 
             // cancelTeam
             // 
-            this.cancelTeam.Font = new System.Drawing.Font("Myriad Pro", 10.8F, System.Drawing.FontStyle.Bold);
+            this.cancelTeam.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cancelTeam.Location = new System.Drawing.Point(12, 580);
             this.cancelTeam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cancelTeam.Name = "cancelTeam";
@@ -385,11 +386,11 @@
             // 
             this.n1.AutoSize = true;
             this.n1.BackColor = System.Drawing.Color.Transparent;
-            this.n1.Font = new System.Drawing.Font("Myriad Pro", 9F, System.Drawing.FontStyle.Bold);
+            this.n1.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold);
             this.n1.Location = new System.Drawing.Point(80, 95);
             this.n1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.n1.Name = "n1";
-            this.n1.Size = new System.Drawing.Size(70, 17);
+            this.n1.Size = new System.Drawing.Size(67, 18);
             this.n1.TabIndex = 13;
             this.n1.Text = "Nazwisko";
             // 
@@ -397,11 +398,11 @@
             // 
             this.i1.AutoSize = true;
             this.i1.BackColor = System.Drawing.Color.Transparent;
-            this.i1.Font = new System.Drawing.Font("Myriad Pro", 9F, System.Drawing.FontStyle.Bold);
+            this.i1.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold);
             this.i1.Location = new System.Drawing.Point(314, 95);
             this.i1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.i1.Name = "i1";
-            this.i1.Size = new System.Drawing.Size(37, 17);
+            this.i1.Size = new System.Drawing.Size(36, 18);
             this.i1.TabIndex = 12;
             this.i1.Text = "Imię";
             // 
@@ -417,8 +418,8 @@
             // 
             // addPerson
             // 
-            this.addPerson.Font = new System.Drawing.Font("Myriad Pro", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.addPerson.Location = new System.Drawing.Point(405, 43);
+            this.addPerson.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addPerson.Location = new System.Drawing.Point(419, 42);
             this.addPerson.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addPerson.Name = "addPerson";
             this.addPerson.Size = new System.Drawing.Size(71, 32);
@@ -433,10 +434,10 @@
             this.uzytkownicyComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.uzytkownicyComboBox.Font = new System.Drawing.Font("Calibri", 9F);
             this.uzytkownicyComboBox.FormattingEnabled = true;
-            this.uzytkownicyComboBox.Location = new System.Drawing.Point(122, 43);
+            this.uzytkownicyComboBox.Location = new System.Drawing.Point(135, 42);
             this.uzytkownicyComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.uzytkownicyComboBox.Name = "uzytkownicyComboBox";
-            this.uzytkownicyComboBox.Size = new System.Drawing.Size(281, 26);
+            this.uzytkownicyComboBox.Size = new System.Drawing.Size(282, 26);
             this.uzytkownicyComboBox.Sorted = true;
             this.uzytkownicyComboBox.TabIndex = 1;
             // 
@@ -483,6 +484,7 @@
             this.Controls.Add(this.uzytkownicyComboBox);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DodajDruzyne";
             this.Text = "Zgłoś drużynę";

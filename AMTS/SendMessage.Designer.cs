@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SendMessage));
             this.usersListView = new System.Windows.Forms.ListView();
             this.messageTextBox = new System.Windows.Forms.TextBox();
             this.subjectTextBox = new System.Windows.Forms.TextBox();
@@ -114,12 +115,13 @@
             // teamMessageCheckBox
             // 
             this.teamMessageCheckBox.AutoSize = true;
+            this.teamMessageCheckBox.BackColor = System.Drawing.Color.Transparent;
             this.teamMessageCheckBox.Location = new System.Drawing.Point(13, 330);
             this.teamMessageCheckBox.Name = "teamMessageCheckBox";
             this.teamMessageCheckBox.Size = new System.Drawing.Size(211, 21);
             this.teamMessageCheckBox.TabIndex = 14;
             this.teamMessageCheckBox.Text = "Wyślij wiadomość drużynową";
-            this.teamMessageCheckBox.UseVisualStyleBackColor = true;
+            this.teamMessageCheckBox.UseVisualStyleBackColor = false;
             this.teamMessageCheckBox.Visible = false;
             this.teamMessageCheckBox.CheckedChanged += new System.EventHandler(this.teamMessageCheckBox_CheckedChanged);
             // 
@@ -127,6 +129,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::AMTS.Properties.Resources.background;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(681, 383);
             this.Controls.Add(this.teamMessageCheckBox);
             this.Controls.Add(this.selectAllButton);
@@ -136,8 +140,10 @@
             this.Controls.Add(this.subjectTextBox);
             this.Controls.Add(this.messageTextBox);
             this.Controls.Add(this.usersListView);
+            this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SendMessage";
-            this.Text = "SendMessage";
+            this.Text = "Wyślij wiadomość";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SendMessage_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();

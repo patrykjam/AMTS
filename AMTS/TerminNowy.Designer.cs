@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TerminNowy));
             this.save = new System.Windows.Forms.Button();
             this.discard = new System.Windows.Forms.Button();
             this.data = new System.Windows.Forms.Label();
@@ -182,6 +183,7 @@
             this.Controls.Add(this.data);
             this.Controls.Add(this.discard);
             this.Controls.Add(this.save);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TerminNowy";
             this.Text = "TerminNowy";

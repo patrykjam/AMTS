@@ -3,8 +3,11 @@ using AMTS.Properties;
 using System;
 using System.Data.SqlClient;
 using System.Diagnostics;
+using System.Drawing.Text;
+using System.IO;
 using System.Threading;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace AMTS
 {
@@ -15,6 +18,7 @@ namespace AMTS
         bool AdminLogged = false;
         User LoggedInUser;
         string connectionString;
+        PrivateFontCollection pfc;
       
         public MainForm()
         {
@@ -30,6 +34,13 @@ namespace AMTS
             druzynaLabel.Visible = false;
             teamLabel.Visible = false;
             logOutButton.Visible = false;
+            pfc = new PrivateFontCollection();
+            string fileName = "MyriadPro.ttf";
+            string path = Path.Combine(Application.StartupPath, @"", fileName);
+            string newPath = Path.GetFullPath(Path.Combine(path, @"..\..\..\Data\" + fileName));
+            pfc.AddFontFile(newPath);
+            loggedInAsLabel.Font = new Font(pfc.Families[0], 12, FontStyle.Bold);
+            teamLabel.Font = new Font(pfc.Families[0], 10);
         }
 
         private void logInButton_Click(object sender, EventArgs e)
@@ -130,7 +141,7 @@ namespace AMTS
                 registerTeamButton.Visible = false;
                 confirmConfirmationButton.Visible = false;
                 brakDruzyny.Visible = false;
-                DBteam = LoggedInUser.getTeamName() + " [NIEZATWIERDZONA]";
+                DBteam = LoggedInUser.getTeamName() + "\n[NIEZATWIERDZONA]";
                 if (LoggedInUser.isCaptain())
                 {
                     kapitan.Visible = true;

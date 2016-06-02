@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WynikiForm));
             this.aMTSDataSet = new AMTS.AMTSDataSet();
             this.wynikBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.wynikTableAdapter = new AMTS.AMTSDataSetTableAdapters.wynikTableAdapter();
@@ -143,8 +144,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.dataGridView1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "WynikiForm";
-            this.Text = "WynikiForm";
+            this.Text = "Wyniki";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.WynikiForm_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.aMTSDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wynikBindingSource)).EndInit();

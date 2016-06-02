@@ -61,7 +61,7 @@ namespace AMTS
                 lastname = r["LASTNAME"].ToString();
                 mail = r["EMAIL"].ToString();
                 if (mail.Equals(captnEmail))
-                    captain = "     X";
+                    captain = "     X       ";
                 else
                     captain = "";
                 string conf = r["AGREE"].ToString();
@@ -75,6 +75,7 @@ namespace AMTS
                 playersListView.Items.Add(LVitem);
             }
             r.Close();
+            playersListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
 
         }
 
