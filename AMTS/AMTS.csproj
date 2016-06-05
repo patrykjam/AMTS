@@ -209,6 +209,12 @@
     <Compile Include="WynikiForm.Designer.cs">
       <DependentUpon>WynikiForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Zbanuj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zbanuj.Designer.cs">
+      <DependentUpon>Zbanuj.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ChooseServer.resx">
       <DependentUpon>ChooseServer.cs</DependentUpon>
     </EmbeddedResource>
@@ -273,6 +279,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WynikiForm.resx">
       <DependentUpon>WynikiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zbanuj.resx">
+      <DependentUpon>Zbanuj.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="AMTSDataSet.xsc">
       <DependentUpon>AMTSDataSet.xsd</DependentUpon>
